@@ -75,7 +75,7 @@ The GUI is titled with "Weather API".
 
      Button to show statistics of the selected location in a pop-up window.
 
-<img src="Image\stat.jpg">
+<img src="Image\stat.JPG">
 
  * <span style="font-size:20px;color: Green;">"SHOW GRAPH" button 🛎️
 
