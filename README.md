@@ -26,76 +26,85 @@ Parameters:
 2. SQLite
 
 ## Instruction
-1. Create a .env file and put down this code:
 
-        WEATHER_API_KEY=' Enter Your API KEY '
+### 1.  Install or update the packages listed in `requirements.txt`
+
+```
+pip install --upgrade -r requirements.txt
+```
+
+
+
+
+
+### 2. Create a .env file and put down this code:
+
+    WEATHER_API_KEY=' Enter Your API KEY '
+
+You can get your own API key by register an account on the api website.
+
+### 3. Run the main.py
+
+The system will automatically collect data from the api every <span style="font-size:20px;color: red;">5 minutes</span>.
+Then, it fetches the data into a database.
+It also store the data in a CSV file for each city / country.
+There will be a Graphical User Interface(GUI) too.
+
+<span style="color: yellow;">
+📌Only Hong Kong and Republic of the Congo are in these system.
+</span>
     
-    You can get your own API key by register an account on the api website.
 
+### 4. GUI
 
-2. Run the main.py
+ <img src="Image\GUI.png">
 
-    The system will automatically collect data from the api every <span style="font-size:20px;color: red;">5 minutes</span>.
+ <br>
 
-    Then, it fetches the data into a database.
+The GUI is titled with "Weather API".
 
-    It also store the data in a CSV file for each city / country.
-
-    <span style="font-size:12px;color: yellow;">📌Only Hong Kong and Republic of the Congo are in these system</span>.
-
-    There will be a Graphical User Interface(GUI) too.
+ * <span style="font-size:20px;color: Green;">Drop down menu 📋:
     
+    Selecte city/country code
 
-3. GUI
+ * <span style="font-size:20px;color: Green;">"CHECK" button 🛎️
 
-    <img src="Image\GUI.png">
+     Button to check and display data below.
 
-    <br>
-    
-    The GUI is titled with "Weather API".
+ * <span style="font-size:20px;color: Green;">"SHOW STATISTICS" button 🛎️
 
-    * <span style="font-size:20px;color: Green;">Drop down menu 📋:
-        
-        Selecte city/country code
+     Button to show statistics of the selected location in a pop-up window.
 
-    * <span style="font-size:20px;color: Green;">"CHECK" button 🛎️
+         stats_text = (  
+        f"City / Country: {selected_option}\n"
+        f"Temperature Statistics:\n"
+        f"Mean: {temperature_mean}\n"
+        f"Median: {temperature_median}\n"
+        f"Mode: {temperature_mode}\n"
+        f"Range: {temperature_range}\n"
+        f"Variance: {temperature_variance}\n"
+        f"Standard Deviation: {temperature_std_dev}\n\n"
+        f"Humidity Statistics:\n"
+        f"Mean: {humidity_mean}\n"
+        f"Median: {humidity_median}\n"
+        f"Mode: {humidity_mode}\n"
+        f"Range: {humidity_range}\n"
+        f"Variance: {humidity_variance}\n"
+        f"Standard Deviation: {humidity_std_dev}\n\n"
+        f"Feels Like Statistics:\n"
+        f"Mean: {feels_like_mean}\n"
+        f"Median: {feels_like_median}\n"
+        f"Mode: {feels_like_mode}\n"
+        f"Range: {feels_like_range}\n"
+        f"Variance: {feels_like_variance}\n"
+        f"Standard Deviation: {feels_like_std_dev}\n"
+    )
 
-        Button to check and display data below.
+ * <span style="font-size:20px;color: Green;">"SHOW GRAPH" button 🛎️
 
-    * <span style="font-size:20px;color: Green;">"SHOW STATISTICS" button 🛎️
+     Button to display a graph of today's temperature and humidity for the selected location.
 
-        Button to show statistics of the selected location in a pop-up window.
-
-            stats_text = (  
-            f"City / Country: {selected_option}\n"
-            f"Temperature Statistics:\n"
-            f"Mean: {temperature_mean}\n"
-            f"Median: {temperature_median}\n"
-            f"Mode: {temperature_mode}\n"
-            f"Range: {temperature_range}\n"
-            f"Variance: {temperature_variance}\n"
-            f"Standard Deviation: {temperature_std_dev}\n\n"
-            f"Humidity Statistics:\n"
-            f"Mean: {humidity_mean}\n"
-            f"Median: {humidity_median}\n"
-            f"Mode: {humidity_mode}\n"
-            f"Range: {humidity_range}\n"
-            f"Variance: {humidity_variance}\n"
-            f"Standard Deviation: {humidity_std_dev}\n\n"
-            f"Feels Like Statistics:\n"
-            f"Mean: {feels_like_mean}\n"
-            f"Median: {feels_like_median}\n"
-            f"Mode: {feels_like_mode}\n"
-            f"Range: {feels_like_range}\n"
-            f"Variance: {feels_like_variance}\n"
-            f"Standard Deviation: {feels_like_std_dev}\n"
-        )
-
-    * <span style="font-size:20px;color: Green;">"SHOW GRAPH" button 🛎️
-
-        Button to display a graph of today's temperature and humidity for the selected location.
-
-        <img src="Image\graphexample.png">
+     <img src="Image\graphexample.png">
 
 ## Edit Cities/Countries Options
 
