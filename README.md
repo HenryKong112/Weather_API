@@ -75,30 +75,7 @@ The GUI is titled with "Weather API".
 
      Button to show statistics of the selected location in a pop-up window.
 
-         stats_text = (  
-        f"City / Country: {selected_option}\n"
-        f"Temperature Statistics:\n"
-        f"Mean: {temperature_mean}\n"
-        f"Median: {temperature_median}\n"
-        f"Mode: {temperature_mode}\n"
-        f"Range: {temperature_range}\n"
-        f"Variance: {temperature_variance}\n"
-        f"Standard Deviation: {temperature_std_dev}\n\n"
-        f"Humidity Statistics:\n"
-        f"Mean: {humidity_mean}\n"
-        f"Median: {humidity_median}\n"
-        f"Mode: {humidity_mode}\n"
-        f"Range: {humidity_range}\n"
-        f"Variance: {humidity_variance}\n"
-        f"Standard Deviation: {humidity_std_dev}\n\n"
-        f"Feels Like Statistics:\n"
-        f"Mean: {feels_like_mean}\n"
-        f"Median: {feels_like_median}\n"
-        f"Mode: {feels_like_mode}\n"
-        f"Range: {feels_like_range}\n"
-        f"Variance: {feels_like_variance}\n"
-        f"Standard Deviation: {feels_like_std_dev}\n"
-    )
+<img src="Image\stat.jpg">
 
  * <span style="font-size:20px;color: Green;">"SHOW GRAPH" button 🛎️
 
