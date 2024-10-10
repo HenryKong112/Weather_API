@@ -31,11 +31,9 @@ Parameters:
 
 ```
 pip install --upgrade -r requirements.txt
+git clone https://github.com/HenryKong112/Weather_API.git
+cd Weather_API
 ```
-
-
-
-
 
 ### 2. Create a .env file and put down this code:
 
